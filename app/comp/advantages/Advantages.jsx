@@ -2,6 +2,7 @@
 import styles from './advantages.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { FaGlobe } from 'react-icons/fa';
 
 export default function Advantages() {
   const advantages = [
@@ -67,6 +68,11 @@ export default function Advantages() {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
+            {/* Глобус */}
+            <div className={styles.iconWrapper}>
+              <FaGlobe className={styles.globeIcon} />
+            </div>
+
             <div className={styles.imageWrapper}>
               <Image src={adv.image} alt={adv.title} width={90} height={130} />
             </div>

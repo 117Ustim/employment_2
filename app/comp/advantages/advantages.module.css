@@ -23,14 +23,14 @@
 }
 
 .title {
-    margin-top: 5vh;
+  margin-top: 5vh;
   font-size: 2.5rem;
   font-weight: bold;
   color: #59656f;
 }
 
 .subtitle {
-    margin-top: 3vh;
+  margin-top: 3vh;
   font-size: 1.4rem;
   color: #59656f;
   margin-bottom: 10vh;
@@ -77,20 +77,27 @@
   position: relative;
   overflow: hidden;
 }
-.card::before {
-  content: '';
+
+/* Удалено .card::before с фоном логотипа */
+
+/* Добавлено для иконки глобуса */
+.iconWrapper {
   position: absolute;
   width: 120px;
   height: 120px;
   background-color: #f28100c1;
-  background-image: url('/logo.png');
-  background-size: 25%; /* Размер логотипа внутри круга */
-  background-repeat: no-repeat;
-  background-position: 40% 65%;;
   border-radius: 50%;
   top: -40px;
   right: -40px;
-  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.globeIcon {
+  color: white;
+  font-size: 30px;
 }
 
 .card::after {
@@ -105,8 +112,6 @@
   border-bottom-right-radius: 12px;
 }
 
-
-
 .imageWrapper {
   margin-bottom: 1rem;
 }
@@ -119,7 +124,7 @@
 }
 
 .cardText {
-     line-height: 1.5;
+  line-height: 1.5;
   font-size: 1.2rem;
   color: #59656f;
 }
@@ -127,13 +132,10 @@
 .footerText {
   margin-top: 3rem;
   margin-bottom: 5vh;
-    line-height: 1.5;
+  line-height: 1.5;
   font-size: 1.3rem;
   color: #59656f;
 }
-
-
-
 
 @media (max-width: 1200px) {
   .grid {

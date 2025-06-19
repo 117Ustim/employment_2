@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+import Burger from "../burger/Burger";
 import styles from "./menu.module.css";
 
 export default function Menu() {
@@ -10,21 +12,98 @@ export default function Menu() {
     }
   };
 
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.5, // Задержка между кнопками
+      },
+    },
+  };
+
+
+  const buttonVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <nav className={styles.menu}>
-      <div className={styles.left}>
-        <button  className={styles.menuButton}onClick={() => scrollToSection("main")}>Main</button>
-        <button  className={styles.menuButton}onClick={() => scrollToSection("history")}>History</button>
-      </div>
+    <>
+      <nav className={styles.menu}>
+        <motion.div
+          className={styles.left}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("main")}
+          >
+            Главная
+          </motion.button>
+          <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("company")}
+          >
+            О нас
+          </motion.button>
+          <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("services")}
+          >
+            Услуги
+          </motion.button>
+        </motion.div>
 
-      <div className={styles.logo}>
-        <span>Logo</span>
-      </div>
+        <div className={styles.logo}>
+          <div
+            className={styles.logo_block}
+            onClick={() => scrollToSection("main")}
+            style={{ cursor: "pointer" }}
+          >
+            <img src="/logo.png" alt="Logo" className={styles.logoImage} />
+            <img src="/logo_text.png" alt="LogoText" className={styles.logoText} />
+          </div>
+        </div>
 
-      <div className={styles.right}>
-        <button className={styles.menuButton}onClick={() => scrollToSection("header")}>Header</button>
-        <button className={styles.menuButton}onClick={() => scrollToSection("footer")}>Footer</button>
+        <motion.div
+          className={styles.right}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("vacancies")}
+          >
+            Вакансии
+          </motion.button>
+          <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("team")}
+          >
+            Сотрудники
+          </motion.button>
+          <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("reviews")}
+          >
+            Отзывы
+          </motion.button>
+        </motion.div>
+      </nav>
+
+      <div className={styles.menu_1000}>
+        <Burger />
       </div>
-    </nav>
+    </>
   );
 }

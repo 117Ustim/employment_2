@@ -2,7 +2,7 @@
   background-color: #f6f8f9;
   width: 100%;
   min-height: 100vh;
-  padding: 10vh;
+  padding: 13vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@
 
 .imageSection {
   position: absolute;
-  left: -20%;
+  left: -25%;
   width: 30vh;
   height: 700px;
 }
@@ -110,7 +110,7 @@ height: 20px;
 
   .pageWrapper {
  
-  padding: 0vh 3vh 0vh 3vh;
+  padding: 5vh 3vh 0vh 3vh;
 
 }
   .container {
@@ -194,7 +194,7 @@ height: 15px;
 
  .pageWrapper {
  
-  padding: 0vh 3vh 0vh 3vh;
+  padding: 4vh 3vh 0vh 3vh;
 
 }
   .container {
