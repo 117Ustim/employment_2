@@ -30,7 +30,9 @@ export default function Main() {
 
         <div className={styles.rightSection}>
           <div className={styles.imageSection}>
-            <Image src="/main_photo.png" alt="Main" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  style={{ objectFit: 'cover' }} />
+            <Image src="/main_photo.png" alt="Main" fill 
+             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+             style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </div>
