@@ -1,0 +1,172 @@
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 5vh 2rem;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.decorativeBar {
+  width: 8px;
+  height: 40px;
+  background-color: #f5b636;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
+.title {
+    margin-top: 5vh;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #59656f;
+}
+
+.subtitle {
+    margin-top: 3vh;
+  font-size: 1.4rem;
+  color: #59656f;
+  margin-bottom: 10vh;
+}
+
+.decorativeCircles::before,
+.decorativeCircles::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f5b636;
+  opacity: 0.15;
+}
+
+.decorativeCircles::before {
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  right: -50px;
+}
+
+.decorativeCircles::after {
+  width: 100px;
+  height: 100px;
+  bottom: -30px;
+  left: -30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f7f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #f28100c1;
+  background-image: url('/logo.png');
+  background-size: 25%; /* Размер логотипа внутри круга */
+  background-repeat: no-repeat;
+  background-position: 40% 65%;;
+  border-radius: 50%;
+  top: -40px;
+  right: -40px;
+  z-index: 0;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: #f28200;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+
+
+.imageWrapper {
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #59656f;
+  margin-bottom: 0.8rem;
+}
+
+.cardText {
+     line-height: 1.5;
+  font-size: 1.2rem;
+  color: #59656f;
+}
+
+.footerText {
+  margin-top: 3rem;
+  margin-bottom: 5vh;
+    line-height: 1.5;
+  font-size: 1.3rem;
+  color: #59656f;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subtitle,
+  .footerText {
+    text-align: center;
+  }
+
+  .titleWrapper {
+    justify-content: center;
+  }
+
+  .decorativeBar {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+  }
+  
+  .left, .right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    font-size: 1.25rem ;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+  
+  .menuButton:hover {
+    color: #0070f3;
+  }
+  

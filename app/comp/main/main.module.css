@@ -1,0 +1,271 @@
+.pageWrapper {
+  background-color: #f6f8f9;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 90vw;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.leftSection {
+  width: 70%;
+  background-color: #3b4853;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; */
+}
+
+.rightSection {
+  width: 30%;
+  background-color: #f5b636;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; */
+}
+
+.imageSection {
+  position: absolute;
+  left: -20%;
+  width: 30vh;
+  height: 700px;
+}
+
+.content {
+  position: absolute;
+  top: 70px;
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+}
+.logo_block {
+
+  display: flex;
+ flex-direction: column;
+justify-content: center;
+/* margin-top: -2vh; */
+ align-items: center;
+ 
+ 
+  gap: 15px;
+}
+.logo {
+  /* margin-bottom: 70px; */
+  width: 80px;
+  height: auto;
+}
+.logoText {
+/* margin-top: 3vh; */
+width: 170px;
+height: 20px;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-top: 7vh;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+}
+
+.button {
+  background-color: #f28200;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+
+
+
+ @media (min-width: 600px) and (max-width: 1024px) {
+
+
+  .pageWrapper {
+ 
+  padding: 0vh 3vh 0vh 3vh;
+
+}
+  .container {
+    flex-direction: column-reverse;
+    margin-top: 7vh;
+    height:90vh;
+    border-radius: 20px;
+  
+ 
+  }
+  .logo_block {
+flex-direction: column;
+justify-content: center;
+margin-top: -8vh;
+ align-items: center;
+ 
+  gap: 5px;
+}
+  .logo {
+  margin-bottom: 0.1vh;
+  width: 50px;
+  height: auto;
+}
+.logoText {
+margin-top: 0.5vh;
+width: 150px;
+height: 15px;
+}
+
+  .leftSection {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0 0 20px 20px;
+    padding: 0px 0;
+    z-index: 3;
+  }
+
+  .rightSection {
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .imageSection {
+    position: relative;
+    top: 130px;
+    width: 320px;
+    height: 500px;
+    left: 0;
+  }
+
+  .content {
+    position: relative;
+  top: 0px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+.title {
+  font-size: 3rem;
+  margin-top: 5vh;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+  .button {
+
+  font-size: 1.3rem;
+ 
+}
+
+}
+
+
+
+@media (min-width: 360px) and (max-width: 600px) {
+
+
+ .pageWrapper {
+ 
+  padding: 0vh 3vh 0vh 3vh;
+
+}
+  .container {
+    flex-direction: column-reverse;
+    margin-top: 7vh;
+    height:90vh;
+    border-radius: 20px;
+  
+ 
+  }
+  .logo_block {
+flex-direction: column;
+justify-content: center;
+margin-top: -8vh;
+ align-items: center;
+ 
+  gap: 5px;
+}
+  .logo {
+  margin-bottom: 0.1vh;
+  width: 40px;
+  height: auto;
+}
+.logoText {
+margin-top: 0.5vh;
+width: 110px;
+height: 10px;
+}
+
+  .leftSection {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0 0 20px 20px;
+    padding: 0px 0;
+    z-index: 3;
+  }
+
+  .rightSection {
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .imageSection {
+    position: relative;
+    top: 130px;
+    width: 320px;
+    height: 500px;
+    left: 0;
+  }
+
+  .content {
+    position: relative;
+  top: 0px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+.title {
+  font-size: 2.1rem;
+  margin-top: 4vh;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+  .button {
+
+  font-size: 1.1rem;
+ 
+}
+}
