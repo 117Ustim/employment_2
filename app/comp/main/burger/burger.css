@@ -33,7 +33,7 @@
 }
 button {
  background-color: #ededed00;
- color: #f28200;
+ color: #4a4a4a;
 }
 .menubox {
   display: block;
@@ -75,6 +75,8 @@ button {
 
 .menu_button {
   font-size: 22px;
+  color: #f28200;
+  
 }
 
 .menu-item:hover {

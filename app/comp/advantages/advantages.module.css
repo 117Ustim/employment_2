@@ -78,9 +78,7 @@
   overflow: hidden;
 }
 
-/* Удалено .card::before с фоном логотипа */
 
-/* Добавлено для иконки глобуса */
 .iconWrapper {
   position: absolute;
   width: 120px;
@@ -95,9 +93,22 @@
   z-index: 1;
 }
 
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .globeIcon {
   color: white;
   font-size: 30px;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .card::after {
