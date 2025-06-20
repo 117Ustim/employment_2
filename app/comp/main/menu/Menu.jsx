@@ -12,20 +12,30 @@ export default function Menu() {
     }
   };
 
-
   const containerVariants = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.5, // Задержка между кнопками
+        staggerChildren: 0.1,
       },
     },
   };
 
-
   const buttonVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const logoVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { 
+      opacity: 1, 
+      scale: 1, 
+      transition: { 
+        duration: 0.6,
+        ease: "easeOut"
+      } 
+    },
   };
 
   return (
@@ -37,7 +47,6 @@ export default function Menu() {
           initial="hidden"
           animate="visible"
         >
-         
           <motion.button
             className={styles.menuButton}
             variants={buttonVariants}
@@ -52,25 +61,30 @@ export default function Menu() {
           >
             Услуги
           </motion.button>
-           <motion.button
+          <motion.button
             className={styles.menuButton}
             variants={buttonVariants}
-            onClick={() => scrollToSection("footer")}
+            onClick={() => scrollToSection("advantages")}
           >
-            Контакты
+            Преимущества
           </motion.button>
         </motion.div>
 
-        <div className={styles.logo}>
+        <motion.div 
+          className={styles.logo}
+          variants={logoVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div
             className={styles.logo_block}
             onClick={() => scrollToSection("main")}
             style={{ cursor: "pointer" }}
           >
-            <img src="/logo.png" alt="Logo" className={styles.logoImage} />
-            <img src="/logo_text.png" alt="LogoText" className={styles.logoText} />
+            <img src="/logo.png" alt="IDENTO Logo" className={styles.logoImage} />
+            <img src="/logo_text.png" alt="IDENTO" className={styles.logoText} />
           </div>
-        </div>
+        </motion.div>
 
         <motion.div
           className={styles.right}
@@ -90,7 +104,7 @@ export default function Menu() {
             variants={buttonVariants}
             onClick={() => scrollToSection("team")}
           >
-            Сотрудники
+            Команда
           </motion.button>
           <motion.button
             className={styles.menuButton}
@@ -98,6 +112,13 @@ export default function Menu() {
             onClick={() => scrollToSection("reviews")}
           >
             Отзывы
+          </motion.button>
+          <motion.button
+            className={`${styles.menuButton} ${styles.contactButton}`}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("footer")}
+          >
+            Контакты
           </motion.button>
         </motion.div>
       </nav>
