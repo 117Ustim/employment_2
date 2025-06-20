@@ -37,13 +37,7 @@ export default function Menu() {
           initial="hidden"
           animate="visible"
         >
-          <motion.button
-            className={styles.menuButton}
-            variants={buttonVariants}
-            onClick={() => scrollToSection("main")}
-          >
-            Главная
-          </motion.button>
+         
           <motion.button
             className={styles.menuButton}
             variants={buttonVariants}
@@ -57,6 +51,13 @@ export default function Menu() {
             onClick={() => scrollToSection("services")}
           >
             Услуги
+          </motion.button>
+           <motion.button
+            className={styles.menuButton}
+            variants={buttonVariants}
+            onClick={() => scrollToSection("footer")}
+          >
+            Контакты
           </motion.button>
         </motion.div>
 

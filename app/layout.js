@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "IDENTO",
- description: "Официальный сайт IDENTO — услуги, контакты.",
+  description: "Официальный сайт IDENTO — услуги, контакты.",
   icons: {
-    icon: '/favicon.png', 
+    icon: "/favicon.png",
   },
 };
 

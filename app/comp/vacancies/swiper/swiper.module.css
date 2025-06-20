@@ -4,21 +4,17 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: #f2f5f7;
-  padding: 20px 0; 
+  padding: 20px 0;
   position: relative;
-
-  
-
 }
 
 .slider {
   display: flex;
   gap: 20px; /* отступ между карточками */
   transition: transform 0.5s ease-in-out;
- 
-  padding: 0; 
-   margin: 0;
 
+  padding: 0;
+  margin: 0;
 }
 
 .slide {
@@ -31,7 +27,6 @@
   border-radius: 40px;
   overflow: hidden;
   padding-bottom: 20px;
- 
 }
 
 .image {
@@ -40,7 +35,6 @@
   object-fit: cover;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-
 }
 
 .textBlock {

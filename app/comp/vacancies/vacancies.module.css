@@ -37,15 +37,12 @@
   overflow: hidden;
 }
 
-
 .telegramSection {
   margin-top: 60px;
   display: flex;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
- 
- 
 }
 
 .telegramImage {
@@ -54,9 +51,8 @@
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-
 }
- 
+
 .telegramContent {
   flex: 1 1 400px;
   display: flex;
@@ -96,7 +92,6 @@
   line-height: 1.4;
 }
 
-
 .telegramButton {
   background-color: #2b9fda;
   color: white;
@@ -115,8 +110,6 @@
   background-color: #2383bf;
 }
 
-
-
 @media (min-width: 900px) {
   .telegramSection {
     justify-content: space-between;
@@ -132,7 +125,6 @@
   }
 }
 
-
 @media (max-width: 900px) {
   .telegramSection {
     flex-direction: column;
@@ -141,7 +133,7 @@
   }
 
   .telegramContent {
-     flex: 1 1 auto;
+    flex: 1 1 auto;
     align-items: center;
     text-align: center;
   }
@@ -160,12 +152,10 @@
   }
 
   .telegramButton {
-    
-    width: 100%; 
-     max-width: 350px;
+    width: 100%;
+    max-width: 350px;
   }
 }
-
 
 @media (max-width: 480px) {
   .telegramTitle {
@@ -186,8 +176,6 @@
     height: 80px;
   }
 }
-
-
 
 @media (max-width: 1200px) {
   .title {

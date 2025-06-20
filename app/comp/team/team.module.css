@@ -1,19 +1,17 @@
 .teamSection {
   background-color: #f2f5f7;
   padding: 10vh 2rem;
- 
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1700px;
 }
 .header {
   display: flex;
   align-items: center;
   gap: 1rem;
- 
 }
 
 .icon {
@@ -103,7 +101,6 @@
   color: #555;
 }
 
-
 @media (max-width: 1024px) {
   .cardsWrapper {
     grid-template-columns: 1fr;
@@ -111,8 +108,8 @@
 
   .card {
     flex-direction: column;
-    align-items: center; 
-    text-align: center;  
+    align-items: center;
+    text-align: center;
   }
 
   .imageWrapper {
@@ -120,33 +117,31 @@
   }
 
   .info {
-    align-items: center; 
+    align-items: center;
   }
 
   .header {
     flex-direction: column;
-    align-items: center; 
-    text-align: center;  
+    align-items: center;
+    text-align: center;
   }
 }
 
- @media (min-width: 360px) and (max-width: 500px) {
-    .teamSection {
- 
-  padding: 5vh 2rem;
- 
-}
-.title {
-  color: #f28200;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
+@media (min-width: 360px) and (max-width: 500px) {
+  .teamSection {
+    padding: 5vh 2rem;
+  }
+  .title {
+    color: #f28200;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
 
-.subtitle {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-  color: #333;
-  display: flex;
-  justify-content: center;
-}
+  .subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+  }
 }

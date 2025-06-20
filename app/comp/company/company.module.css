@@ -2,15 +2,13 @@
   display: flex;
   width: 100%;
   height: 100%;
- 
+
   padding: 8vh 4rem;
   gap: 2rem;
   box-sizing: border-box;
-  background:#f7f9fa;
-
+  background: #f7f9fa;
 }
 
-/* Левый блок - 60% */
 .leftBlock {
   width: 60%;
   display: flex;
@@ -23,11 +21,9 @@
 
 .title {
   font-size: 2.5rem;
-margin: 5vh 0 3vh 0;
+  margin: 5vh 0 3vh 0;
   color: #333;
 }
-
-
 
 .subtitleSecondary {
   font-size: 1.5rem;
@@ -51,27 +47,26 @@ margin: 5vh 0 3vh 0;
   li {
     font-weight: 500;
   }
-  
 }
 
 .list li {
   position: relative;
-  padding-left: 25px; /* Отступ слева под значок */
+  padding-left: 25px;
   margin-bottom: 0.5rem;
 }
 
 .list li::before {
-  content: "✔"; /* Можно заменить на любой символ, например "•", "→", "★" */
+  content: "✔";
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  color: #f28200; /* Цвет значка, например оранжевый */
+  color: #f28200;
   font-weight: bold;
   font-size: 1.1em;
 }
 .button {
-    margin: 5vh 0 5vh 5vh;
+  margin: 5vh 0 5vh 5vh;
   align-self: flex-start;
   background-color: #f28200;
   color: white;
@@ -92,7 +87,6 @@ margin: 5vh 0 3vh 0;
   box-shadow: 0 6px 14px rgba(217, 110, 0, 0.7);
 }
 
-/* Правый блок - 40% */
 .rightBlock {
   width: 40%;
   position: relative;
@@ -115,13 +109,13 @@ margin: 5vh 0 3vh 0;
 
 @media (max-width: 1500px) and (min-width: 901px) {
   .container {
-    padding: 2rem 3rem; 
-    gap: 3rem; 
+    padding: 2rem 3rem;
+    gap: 3rem;
   }
 
   .leftBlock {
     width: 60%;
-   
+
     min-width: 500px;
   }
 
@@ -150,7 +144,6 @@ margin: 5vh 0 3vh 0;
   }
 }
 
-
 @keyframes fadeInSlide {
   to {
     opacity: 1;
@@ -158,41 +151,38 @@ margin: 5vh 0 3vh 0;
   }
 }
 
+@media (min-width: 360px) and (max-width: 600px) {
+  .title {
+    font-size: 2.2rem;
+    margin: 5vh 0 3vh 0;
+    color: #333;
+  }
 
- @media (min-width: 360px) and (max-width: 600px) {
-.title {
-  font-size: 2.2rem;
-margin: 5vh 0 3vh 0;
-  color: #333;
-}
+  .subtitleSecondary {
+    font-size: 1.4rem;
+    color: #f28200;
+    margin: 3vh 0 3vh 0;
+  }
 
+  .text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 1rem;
+  }
 
+  .list {
+    list-style: disc inside;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #444;
+    padding-left: 1rem;
+  }
 
-.subtitleSecondary {
-  font-size: 1.4rem;
-  color: #f28200;
-  margin: 3vh 0 3vh 0;
-}
-
-.text {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.list {
-  list-style: disc inside;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #444;
-  padding-left: 1rem;
-}
-
-.button {
+  .button {
     margin: 5vh 0 3vh 10vh;
- padding: 1rem 2rem;
-  font-size: 1.1rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
 }
- }

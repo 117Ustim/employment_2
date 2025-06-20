@@ -43,12 +43,7 @@ export default function Burger() {
       <ul className="menubox">
         <span className="menu-item"></span>
         <div className="block_menu">
-          <button
-            className="menu_button"
-            onClick={() => scrollToSection("main")}
-          >
-            Главная
-          </button>
+         
           <button
             className="menu_button"
             onClick={() => scrollToSection("company")}
@@ -60,6 +55,12 @@ export default function Burger() {
             onClick={() => scrollToSection("services")}
           >
             Услуги
+          </button>
+           <button
+            className="menu_button"
+            onClick={() => scrollToSection("footer")}
+          >
+            Контакты
           </button>
           <button
             className="menu_button"

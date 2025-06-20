@@ -7,10 +7,11 @@ import Menu from "../app/comp/main/menu/Menu";
 import Main from "../app/comp/main/Main";
 import Advantages from "./comp/advantages/Advantages";
 import Company from "./comp/company/Сompany";
-import Footer from "../app/comp/footer/Footer";
 import Services from "./comp/services/Services";
 import Team from "./comp/team/Team";
 import Vacancies from "./comp/vacancies/Vacancies";
+import Reviews from "./comp/reviews/Reviews";
+import Footer from "../app/comp/footer/Footer";
 
 export default function Home() {
   const sections = [
@@ -20,6 +21,7 @@ export default function Home() {
     { id: "services", component: <Services /> },
     { id: "team", component: <Team /> },
     { id: "vacancies", component: <Vacancies /> },
+    { id: "reviews", component: <Reviews /> },
     { id: "footer", component: <Footer /> },
   ];
 

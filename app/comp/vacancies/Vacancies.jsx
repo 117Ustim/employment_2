@@ -25,7 +25,7 @@ export default function Vacancies() {
         {/* Новый блок под Swiper */}
         <div className={styles.telegramSection}>
           <img
-            src="/img_telegram.png" 
+            src="/img_telegram.png"
             alt="Telegram"
             className={styles.telegramImage}
           />

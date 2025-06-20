@@ -5,7 +5,7 @@ import styles from './company.module.css';
 
 export default function Company() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, margin: '-100px' }); 
+  const isInView = useInView(ref, { once: false, margin: '-100px' });
 
   // Варианты анимаций
   const variantsLeftBlock = {
@@ -19,16 +19,16 @@ export default function Company() {
   };
 
   const variantsText = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 1.5,   // увеличить длительность для плавности
-      ease: [0.43, 0.13, 0.23, 0.96], // плавный easing (custom bezier)
-      delay: 0.3       // небольшая задержка для эффекта постепенного появления
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,   // увеличить длительность для плавности
+        ease: [0.43, 0.13, 0.23, 0.96],
+        delay: 0.3       // небольшая задержка для эффекта постепенного появления
+      },
     },
-  },
-};
+  };
 
   const variantsButton = {
     hidden: { x: -100, opacity: 0 },
@@ -71,7 +71,7 @@ export default function Company() {
         </motion.p>
 
         <motion.a
-          href="https://t.me/+Ecw2cS1TW1Q4NjM1"
+          href="https://t.me/+Ecw2cS1T"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.button}
