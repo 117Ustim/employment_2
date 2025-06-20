@@ -1,0 +1,88 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f2f5f7;
+  padding: 20px 0; 
+  position: relative;
+
+  
+
+}
+
+.slider {
+  display: flex;
+  gap: 20px; /* отступ между карточками */
+  transition: transform 0.5s ease-in-out;
+ 
+  padding: 0; 
+   margin: 0;
+
+}
+
+.slide {
+  flex: 0 0 calc((100% - 40px) / 3); /* для 3 карточек учитываем 2 gap по 20px = 40px */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcfdfd;
+  border-radius: 40px;
+  overflow: hidden;
+  padding-bottom: 20px;
+ 
+}
+
+.image {
+  width: 100%;
+  height: 432px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
+}
+
+.textBlock {
+  padding: 20px;
+  text-align: center;
+}
+
+.textBlock h3 {
+  margin-bottom: 10px;
+}
+
+.textBlock p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  .slide {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+
+  .image {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slide {
+    flex: 0 0 calc((100% - 20px) / 2); /* для 2 карточек учитываем 1 gap */
+  }
+
+  .image {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+
+  .image {
+    height: auto;
+  }
+}
