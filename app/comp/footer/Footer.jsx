@@ -80,7 +80,7 @@ export default function Footer() {
             © IDENTO. Все права защищены.
           </p>
           <div className={styles.socialLinks}>
-            <a href="#" className={styles.socialLink} aria-label="Telegram">
+            <a href="/" className={styles.socialLink} aria-label="Telegram">
               <img src="/img_telegram.png" alt="Telegram" className={styles.socialIcon} />
             </a>
           </div>

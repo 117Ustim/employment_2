@@ -95,7 +95,7 @@
 /* Сетка отзывов */
 .reviewsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 5vh;
 }
@@ -260,7 +260,7 @@
   }
 }
 
-/* Адаптивность */
+
 @media (max-width: 1200px) {
   .reviewsGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -269,7 +269,7 @@
 
 @media (max-width: 768px) {
   .reviewsSection {
-    padding: 5vh 1.5rem;
+    padding: 8vh 1rem;
   }
   
   .title {
@@ -282,7 +282,6 @@
   
   .reviewsGrid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
   
   .reviewCard {
@@ -292,7 +291,6 @@
   .cardHeader {
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
   }
   
   .reviewerInfo {
@@ -311,7 +309,7 @@
 
 @media (max-width: 480px) {
   .reviewsSection {
-    padding: 3vh 1rem;
+    padding: 6vh 1rem;
   }
   
   .title {
