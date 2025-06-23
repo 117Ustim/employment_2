@@ -1,4 +1,3 @@
-
 import Swiper from './swiper/Swiper';
 import styles from './vacancies.module.css';
 
@@ -75,7 +74,12 @@ export default function Vacancies() {
             </div>
           </div>
 
-          <button className={styles.telegramButton}>Присоединиться в Телеграм</button>
+          <button 
+            className={styles.telegramButton}
+            onClick={() => window.open('https://t.me/+w-EOkEu_P0Q1YjI1', '_blank')}
+          >
+            Присоединиться в Телеграм
+          </button>
         </div>
       </div>
     </div>

@@ -22,6 +22,7 @@ export default function Main() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               className={styles.button}
+              onClick={() => window.open('https://t.me/+w-EOkEu_P0Q1YjI1', '_blank')}
             >
               Подробнее о нас
             </motion.button>

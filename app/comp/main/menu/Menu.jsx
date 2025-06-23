@@ -116,7 +116,7 @@ export default function Menu() {
           <motion.button
             className={`${styles.menuButton} ${styles.contactButton}`}
             variants={buttonVariants}
-            onClick={() => scrollToSection("footer")}
+            onClick={() => window.open('https://t.me/+w-EOkEu_P0Q1YjI1', '_blank')}
           >
             Контакты
           </motion.button>

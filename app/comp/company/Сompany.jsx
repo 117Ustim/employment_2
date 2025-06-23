@@ -1,4 +1,3 @@
-
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './company.module.css';
@@ -71,7 +70,7 @@ export default function Company() {
         </motion.p>
 
         <motion.a
-          href="https://t.me/+Ecw2cS1T"
+          href="https://t.me/+w-EOkEu_P0Q1YjI1"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.button}
