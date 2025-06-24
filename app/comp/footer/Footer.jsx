@@ -85,6 +85,9 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <p className={styles.additionalInfo}>
+          Если у вас остались вопросы, пожалуйста, свяжитесь с нами через любой удобный для вас мессенджер или напишите нам на почту: <a href="mailto:Idento.work.info@gmail.com" className={styles.emailLink}>Idento.work.info@gmail.com</a>
+        </p>
       </div>
     </footer>
   );

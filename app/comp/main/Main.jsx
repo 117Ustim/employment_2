@@ -8,12 +8,15 @@ export default function Main() {
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.container}>
-        <div className={styles.leftSection}>
+        <div className={styles.section}>
+          <video autoPlay muted loop className={styles.videoBackground}>
+            <source src="/main_video.mp4" type="video/mp4" />
+          </video>
           <div className={styles.content}>
-            <div className={styles.logo_block}>
+            {/* <div className={styles.logo_block}>
               <Image src="/logo.png" alt="Logo" width={120} height={120} className={styles.logo} />
               <Image src="/logo_text.png" alt="Logo_text" width={120} height={120} className={styles.logoText} />
-            </div>
+            </div> */}
 
             <h1 className={styles.title}>Кадровое агентство в Европе</h1>
             <p className={styles.description}>
@@ -26,14 +29,6 @@ export default function Main() {
             >
               Подробнее о нас
             </motion.button>
-          </div>
-        </div>
-
-        <div className={styles.rightSection}>
-          <div className={styles.imageSection}>
-            <Image src="/main_photo_2.png" alt="Main" fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </div>

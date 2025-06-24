@@ -266,9 +266,29 @@
 }
 
 .socialIcon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   filter: brightness(0) invert(1);
+}
+
+.additionalInfo {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 2rem 0;
+  max-width: 1700px;
+  line-height: 1.5;
+}
+
+.emailLink {
+  color: #f5b636;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
 }
 
 /* Адаптивность */
